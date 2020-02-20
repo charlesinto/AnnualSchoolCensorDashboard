@@ -25,19 +25,19 @@
                     </div>
                   </div>
                   <div class="row">
-                      <form class="login-form" onsubmit="return false" novalidate action="#" method="POST">
+                      <form class="login-form" #loginForm (ngSubmit)="login(loginForm)" novalidate action="#">
                           <fieldset class="">
                               <div class="row mb-4">
                                 <div class="fill-width-container shadow bg-white rounded form-group inner-addon left-addon">
-                                  <!-- <ion-icon name="person-circle-outline"></ion-icon> -->
+                                  <!-- <ion-icon name="person-circle-outline"></ionss-icon> -->
                                   <i class="glyphicon glyphicon-user"></i>
-                                    <input class="form-control custom-input" placeholder="Username or Email" />
+                                    <input name="username" class="form-control custom-input" placeholder="Username or Email" />
                                 </div>
                               </div>
                               <div class="row mb-4">
                                 <div class="fill-width-container shadow mb-5 bg-white rounded form-group inner-addon left-addon">
                                     <i class="glyphicon glyphicon-user"></i>
-                                    <input class="form-control custom-input" placeholder="Password" />
+                                    <input name="password" class="form-control custom-input" placeholder="Password" />
                                 </div>
                               </div>
                               <div class="row mb-4 fill-width-container d-flex flex-row justify-content-center">

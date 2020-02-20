@@ -9,5 +9,13 @@ export class AppComponent implements OnInit {
   title = 'asc-web';
   constructor(@Inject(JQUERY_TOKEN) private $: any) { }
   ngOnInit() {
+    // setTimeout(() => {
+    //   this.$('.loader-wrapper').show(1000)
+    // }, 1000)
+
+    // setTimeout(() => {
+    //   this.$('.loader-wrapper').hide(1000)
+    // }, 3000)
+
   }
 }
