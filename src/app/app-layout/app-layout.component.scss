@@ -1,0 +1,13 @@
+@media (max-width: 934px){
+  .app-wrapper{
+    max-width: 100% !important;
+    width: 100% !important;
+    flex: 100%;
+  }
+}
+
+@media (max-width: 768px){
+  .side-menu-wrapper {
+      display: none !important;
+  }
+}

@@ -9,6 +9,8 @@ import { SWEET_ALERT_TOKEN } from './services/swal-service.service'
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AppLayoutComponent } from './app-layout/app-layout.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 // import { IonicModule } from '@ionic/angular';
 
 
@@ -22,6 +24,8 @@ const swal = window['swal'];
     LoginComponent,
     HomeComponent,
     NavbarComponent,
+    AppLayoutComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
