@@ -7,19 +7,22 @@
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link nav-links-md" routerLinkActive="active" href="#">Dashboard <span class="sr-only">(current)</span></a>
+        <a class="nav-link nav-links-md" routerLinkActive="active" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Dashboard <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-links-md" href="#">Users</a>
+        <a class="nav-link nav-links-md" [routerLink]="['/manage-roles']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Manage Role</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-links-md" href="#">Schools</a>
+        <a class="nav-link nav-links-md" [routerLink]="['/manage-users']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" >Users</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-links-md" href="#">Teachers</a>
+        <a class="nav-link nav-links-md" [routerLink]="['/manage-schools']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Schools</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-links-md" href="#">Students</a>
+        <a class="nav-link nav-links-md" [routerLink]="['/manage-teachers']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Teachers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-links-md" [routerLink]="['/manage-schools']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Students</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
