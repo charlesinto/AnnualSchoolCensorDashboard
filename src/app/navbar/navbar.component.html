@@ -27,7 +27,18 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search"> -->
-      <h3 class="greetings">Welcome,  <span>{{username}}</span></h3>
+
+
+      <div class="dropdown show">
+
+        <a class=" greetings dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Welcome,  <span>{{username}}</span>
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <span class="dropdown-item">Log Out</span>
+        </div>
+      </div>
       <!-- <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button> -->
     </form>
   </div>

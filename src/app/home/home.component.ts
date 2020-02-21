@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   constructor( @Inject(JQUERY_TOKEN) private $: any) { }
 
   ngOnInit() {
-    this.$('.loader-wrapper').show(500);
+    // this.$('.loader-wrapper').show(500);
     // setTimeout(() => {
     //   this.$('.loader-wrapper').hide(1000)
     // }, 10000);

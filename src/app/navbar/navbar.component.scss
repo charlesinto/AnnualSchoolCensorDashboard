@@ -17,10 +17,15 @@
   position: fixed;
     width: 100% ;
     z-index: 10;
-    height: 70px;
+    min-height: 70px;
 }
 
 .greetings{
   font-size: 85%;
   font-family: Arial, Helvetica, sans-serif;
+  color:#fff;
+}
+
+span.dropdown-item{
+  cursor: pointer !important;
 }
