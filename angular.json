@@ -28,11 +28,15 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/assets/CSS/bootstrap.min.css",
+              "src/assets/CSS/dashboard.css",
+              "node_modules/sweetalert2/dist/sweetalert2.min.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/JS/core.js",
+              "node_modules/sweetalert2/dist/sweetalert2.min.js"
             ]
           },
           "configurations": {
@@ -106,6 +110,30 @@
             "exclude": [
               "**/node_modules/**"
             ]
+          }
+        },
+        "ionic-cordova-serve": {
+          "builder": "@ionic/angular-toolkit:cordova-serve",
+          "options": {
+            "cordovaBuildTarget": "asc-web:ionic-cordova-build",
+            "devServerTarget": "asc-web:serve"
+          },
+          "configurations": {
+            "production": {
+              "cordovaBuildTarget": "asc-web:ionic-cordova-build:production",
+              "devServerTarget": "asc-web:serve:production"
+            }
+          }
+        },
+        "ionic-cordova-build": {
+          "builder": "@ionic/angular-toolkit:cordova-build",
+          "options": {
+            "browserTarget": "asc-web:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "asc-web:build:production"
+            }
           }
         }
       }

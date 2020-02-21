@@ -19,10 +19,15 @@
     "@angular/platform-browser": "~7.1.0",
     "@angular/platform-browser-dynamic": "~7.1.0",
     "@angular/router": "~7.1.0",
+    "@ionic/angular": "^5.0.0",
     "bootstrap": "^4.4.1",
     "core-js": "^2.5.4",
+    "ionicons": "^5.0.0",
     "jquery": "^3.4.1",
+    "ng-sweet-alert": "^1.0.11",
     "rxjs": "~6.3.3",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^9.7.2",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
   },
@@ -46,6 +51,7 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.1.6"
+    "typescript": "~3.1.6",
+    "@ionic/angular-toolkit": "latest"
   }
 }

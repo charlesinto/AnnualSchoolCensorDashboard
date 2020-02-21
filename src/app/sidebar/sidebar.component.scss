@@ -1,0 +1,28 @@
+.sidebar{
+  background-color: #5987AA !important;
+  ul{
+    li {
+      a.nav-link{
+        color: #fff;
+      }
+      a.nav-link:hover{
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+      }
+      svg.feather{
+        color: #fff !important;
+      }
+    }
+  }
+  .nav-link.active{
+    color: #fff !important;
+  }
+}
+
+
+
+@media (min-width: 936px){
+  .d-md-block {
+      display: block !important;
+  }
+
+}

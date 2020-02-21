@@ -1,0 +1,68 @@
+<section class="login-wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col left-background d-flex p-2 .flex-column justify-content-start">
+        <!-- <img src="assets/images/dots-left.jpg" alt="asc-dots" class="asc-img-logo" /> -->
+      </div>
+      <div class="col-lg-6 col-md-6 right-background">
+
+      </div>
+
+    </div>
+    <div class="floated-container">
+      <div class="container fill-container">
+        <div class="row fill-container">
+          <div class="col-md-6 col-lg-6 left-container">
+            <div class="login-logo d-flex p-2 flex-column justify-content-center align-items-center">
+                <img src="assets/images/asc-dots.jpg" alt="asc-logo" class="asc-img-logo" />
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 right-container d-flex p-2 flex-column justify-content-center align-items-center">
+              <div class="container">
+                  <div class="row">
+                    <div style="width: 100%" class="d-flex flex-row justify-content-center p-2 mt-5 mb-4">
+                      <h3 class="lg-text">Login</h3>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <form [formGroup]="loginForm"  class="login-form" (ngSubmit)="login(loginForm)" novalidate action="#">
+                          <fieldset class="">
+                              <div class="row mb-4">
+                                <div class="fill-width-container shadow bg-white rounded form-group inner-addon left-addon">
+                                  <!-- <ion-icon name="person-circle-outline"></ionss-icon> -->
+                                  <i class="glyphicon glyphicon-user"></i>
+                                    <input formControlName="username" [ngClass]="isFieldInvalid(loginForm, 'username')" name="username" class="form-control custom-input" placeholder="Username or Email" />
+
+                                  </div>
+                                  <span class="error-label" *ngIf="!usernameIsValid">Username is required</span>
+                              </div>
+                              <div class="row mb-5">
+                                <div class="fill-width-container shadow bg-white rounded form-group inner-addon left-addon">
+                                    <i class="glyphicon glyphicon-user"></i>
+                                    <input formControlName="password" [ngClass]="isFieldInvalid(loginForm, 'password')" name="password" class="form-control custom-input" placeholder="Password" />
+
+                                  </div>
+                                  <span class="error-label" *ngIf="!passwordIsValid">Password is required</span>
+                              </div>
+                              <div class="row mb-2 fill-width-container d-flex flex-row justify-content-center">
+                                <div class="fill-width-container d-flex flex-row justify-content-center">
+                                    <button type="submit" class="btn shadow btn-ripple bg-white p-2 rounded px-5 rounded form-group inner-addon left-addon btn-custom">
+                                      Login
+                                    </button>
+                                </div>
+                              </div>
+                              <div class="row mb-5">
+                                  <p style="text-align: center; width: 100%;">
+                                    <a class="text-light">Forgot your password? Recover Password</a>
+                                  </p>
+                              </div>
+                          </fieldset>
+                      </form>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

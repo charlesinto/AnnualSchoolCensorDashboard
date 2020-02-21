@@ -1,0 +1,18 @@
+.nav-links-md{
+  display: block;
+}
+@media (min-width: 934px){
+  .nav-links-md{
+    display: none !important;
+  }
+}
+
+.navbar{
+  background-color: #9DBDD5 !important;
+  background-image: linear-gradient(#9DBDD5, #9DBDD5 60%, #9DBDD5);
+}
+
+.greetings{
+  font-size: 85%;
+  font-family: Arial, Helvetica, sans-serif;
+}
