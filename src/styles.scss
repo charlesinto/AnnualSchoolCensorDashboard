@@ -36,8 +36,8 @@
   height: 100%;
   z-index: 10000;
   top:0;
-  display: none;
   left: 0;
+  display: none;
   background-color: rgba(0,0,0,0.5);
 }
 
@@ -63,4 +63,25 @@
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.error-input{
+  border: 2px solid #ff0000 !important;
+}
+
+.error-label{
+  width: 100%;
+  text-align: right;
+  font-size: 0.9em;
+  color: #dc3545;
+}
+
+.error-label::before{
+  content: '*';
+  color: #ff0000;
+  padding-right: 4px;
+}
+
+.is-invalid{
+  border: 2px solid #ff0000 !important;
 }

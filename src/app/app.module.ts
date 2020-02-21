@@ -1,15 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { JQUERY_TOKEN } from './services/jquery.service';
-import { SWEET_ALERT_TOKEN } from "./services/swal-service.service";
+import { SWEET_ALERT_TOKEN } from './services/swal-service.service'
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import Swal from "sweetalert2";
 // import { IonicModule } from '@ionic/angular';
 
 
@@ -27,6 +26,8 @@ const swal = window['swal'];
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
     // IonicModule.forRoot()
   ],
   providers: [
