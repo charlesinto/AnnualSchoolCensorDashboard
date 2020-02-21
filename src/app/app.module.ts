@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppLayoutComponent } from './app-layout/app-layout.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { ManageroleComponent } from './managerole/managerole.component';
 // import { IonicModule } from '@ionic/angular';
 
 
@@ -26,6 +27,7 @@ const swal = window['swal'];
     NavbarComponent,
     AppLayoutComponent,
     SidebarComponent,
+    ManageroleComponent,
   ],
   imports: [
     BrowserModule,

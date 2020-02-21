@@ -15,9 +15,9 @@ export class AppComponent implements OnInit {
       // this.swal.fire('hello')
     }, 1000)
 
-    setTimeout(() => {
-      this.$('.loader-wrapper').hide(1000)
-    }, 5000)
+    // setTimeout(() => {
+    //   this.$('.loader-wrapper').hide(1000)
+    // }, 5000)
 
   }
 }

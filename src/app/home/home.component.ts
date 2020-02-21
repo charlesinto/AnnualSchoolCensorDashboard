@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { JQUERY_TOKEN } from "../services/jquery.service";
 
 @Component({
   selector: 'app-home',
@@ -7,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor( @Inject(JQUERY_TOKEN) private $: any) { }
 
   ngOnInit() {
-    // alert()
+    this.$('.loader-wrapper').show(500);
+    // setTimeout(() => {
+    //   this.$('.loader-wrapper').hide(1000)
+    // }, 10000);
   }
 
 }

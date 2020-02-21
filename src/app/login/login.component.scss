@@ -107,6 +107,12 @@ pointer-events: none;
 
 }
 
+a.forgotpassword.text-underline:hover{
+  text-decoration: underline !important;
+  color: #fff !important;
+  cursor: pointer;
+}
+
 // .error-input{
 //   border: 2px solid #ff0000;
 // }
