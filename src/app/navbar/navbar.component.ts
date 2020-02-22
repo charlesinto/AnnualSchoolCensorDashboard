@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { JQUERY_TOKEN } from "../services/jquery.service";
+import { AuthserviceService } from "../services/authservice.service";
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   username: String = 'charles.onuorah@yahoo.com';
-  constructor() { }
+  constructor(@Inject(JQUERY_TOKEN) private $: any, private authService: AuthserviceService) { }
 
   ngOnInit() {
   }
+  logoutUser(){
+    this.authService.logoutUser()
 
+  }
 }
