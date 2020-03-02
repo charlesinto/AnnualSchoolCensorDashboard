@@ -24,19 +24,45 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
             ],
             "styles": [
               "src/styles.scss",
               "src/assets/CSS/bootstrap.min.css",
               "src/assets/CSS/dashboard.css",
-              "node_modules/sweetalert2/dist/sweetalert2.min.css"
+              "node_modules/sweetalert2/dist/sweetalert2.min.css",
+              "node_modules/tokenize2/dist/tokenize2.min.css",
+              "node_modules/@ttskch/select2-bootstrap4-theme/dist/select2-bootstrap4.min.css",
+              "node_modules/select2/dist/css/select2.min.css",
+              "node_modules/datatables.net-responsive-dt/css/responsive.dataTables.css",
+              "node_modules/datatables.net-buttons-dt/css/buttons.dataTables.css",
+              "node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js",
+              "node_modules/bootstrap/js/dist/dropdown.js",
               "src/assets/JS/core.js",
-              "node_modules/sweetalert2/dist/sweetalert2.min.js"
+              "node_modules/sweetalert2/dist/sweetalert2.min.js",
+              "node_modules/tokenize2/dist/tokenize2.min.js",
+              "node_modules/select2/dist/js/select2.min.js",
+              "node_modules/chart.js/dist/Chart.min.js",
+              "node_modules/datatables.net/js/jquery.dataTables.min.js",
+              "node_modules/jszip/dist/jszip.js",
+              "node_modules/datatables.net-buttons/js/dataTables.buttons.js",
+              "node_modules/datatables.net-buttons/js/buttons.colVis.js",
+              "node_modules/datatables.net-buttons/js/buttons.flash.js",
+              "node_modules/datatables.net-buttons/js/buttons.html5.js",
+              "node_modules/datatables.net-buttons/js/buttons.print.js",
+              "node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js",
+              "node_modules/datatables.net-responsive/js/dataTables.responsive.js"
+
             ]
           },
           "configurations": {

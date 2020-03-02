@@ -1,6 +1,106 @@
 <app-app-layout>
-  <p>
-    managerole works!
-  </p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-12 col-sm-12 shadow py-4 px-4">
+        <h4 style="color: #000;">Manage Role</h4>
+        <hr>
+        <form class="px-4">
+            <fieldset>
+              <div class="row">
+                <div class="form-group col-md-6 col-lg-6 col-sm-12">
+                  <label>Role Name</label>
+                  <input type="text" class="form-control" placeholder="Role name"/>
+                </div>
+                <div class="form-group col-md-6 col-lg-6 col-sm-12">
+                  <label>State Level Access</label>
+                  <select class="form-control">
+                    <option value="">Select</option>
+                    <option value="1">All States</option>
+                    <option value="2">Specific States</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6 col-lg-6 col-sm-12">
+                  <label>State</label>
+                  <select class="states" name="lgas[]" multiple="multiple">
+                  </select>
+                </div>
+                <div class="form-group col-md-6 col-lg-6 col-sm-12">
+                  <label>Local Government Level Access</label>
+                  <select class="form-control">
+                    <option value="">Select</option>
+                    <option value="1">All Local Governments</option>
+                    <option value="2">Specific Local Government</option>
+                  </select>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6 col-lg-6 col-sm-12">
+                  <label>Local Goverment</label>
+                  <select class="lga" name="lgas[]" multiple="multiple">
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-4 mt-4">
+                <div class="border-header d-flex py-2 px-2">
+                  <div class="d-flex role-title" style="color: #fff;">Role Access Configuration</div>
+                  <div class="d-flex role-action-title px-4">
+                      <div class="d-flex">Can Create</div>
+                      <div class="d-flex">Can Delete</div>
+                  </div>
+                </div>
+                <table class="table table-striped">
+                  <tbody>
+                    <tr>
+                      <td>Schools</td>
+                      <td>
+                        <input type="checkbox">
+                      </td>
+                      <td>
+                        <input type="checkbox">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Student</td>
+                      <td>
+                        <input type="checkbox">
+                      </td>
+                      <td>
+                        <input type="checkbox">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Teacher</td>
+                      <td>
+                        <input type="checkbox">
+                      </td>
+                      <td>
+                        <input type="checkbox">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-12 d-flex flex-row col-lg-12 col-sm-12 justify-content-end align-items-end">
+                  <button type="submit" class="btn btn-primary"> Save</button>
+                </div>
+              </div>
+            </fieldset>
+        </form>
+        <div class="row mt-4">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <table datatable [dtOptions]="dtOptions[0]"  id="dataTable-0" class="table table-striped table-bordered" style="width:100%">
+
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 </app-app-layout>
 
